@@ -1,7 +1,9 @@
 ```markdown
 # Jan-Buch-Finder
 
-**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und Informationen zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern. Darüber hinaus gibt es einen Button, um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
+**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und Informationen zu den verfügbaren Titeln anzeigen kannst.
+Die Anwendung zeigt eine Liste von Büchern, deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern.
+Darüber hinaus gibt es einen Button, um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
 
 ## Funktionen
 
@@ -28,7 +30,8 @@ Die `requirements.txt`-Datei ist im Repository enthalten und listet alle erforde
 
 ### Windows .exe Datei
 
-Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)** im `dist/`-Ordner des Repositories. Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
+Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)** im `dist/`-Ordner des Repositories.
+Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 1. Gehe zum Ordner `dist/`.
 2. Doppelklicke auf `Jan-Buch-Finder.exe`, um die Anwendung zu starten.
