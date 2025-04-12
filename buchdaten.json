@@ -1,0 +1,31 @@
+[
+    {
+      "isbn": "978-3-819071-79-9",
+      "titel": "Figura KI/Figura AI",
+      "beschreibung": "Tauchen Sie ein in die Welt fortschrittlicher künstlicher Intelligenz mit „Figura-KI/Figura-AI: Das Konzept einer multimodularen Hochleistungs-KI“. Dieses Buch bietet eine tiefgehende Erkundung von Figura-AI – einem hochmodernen, modular konzipierten KI-System, das durch die Verbindung von Effizienz, Flexibilität und ethischem Verantwortungsbewusstsein verschiedene Branchen revolutionieren soll. Zentrale Inhalte: 32 Kapitel: Jedes Kapitel widmet sich einem spezifischen Aspekt der Figura-AI-Architektur – von den Kernmodulen und Systemblöcken bis hin zur Netzwerkkommunikation und praxisnahen Anwendungsszenarien. Technische Einblicke: Detaillierte Erklärungen – direkt entnommen aus dem offiziellen Figura-AI GitHub-Repository. Einsatz in der Praxis: Fallstudien zeigen auf, wie Figura-AI in Bereichen wie Wissenschaft und Forschung, industrielle Automatisierung, Medizin und Gesundheitswesen, Cybersicherheit, Umweltwissenschaften und der KI-Forschung effektiv eingesetzt werden kann. Modulares Design: Verständnis der einzigartigen modularen Architektur, die skalierbare und anpassungsfähige KI-Lösungen ermöglicht – für maximale Leistungsfähigkeit in unterschiedlichsten Anwendungsfeldern. Ethische Aspekte: Einblicke in System-Module wie Sokrates, Salomon, Joshua und Assisi, die für einen verantwortungsvollen und gewissenhaften KI-Einsatz sorgen.",
+      "kurzbeschreibung": "Tauchen Sie ein in die Welt fortschrittlicher künstlicher Intelligenz mit „Figura-KI/Figura-AI: Das Konzept einer multimodularen Hochleistungs-KI“.",
+      "cover": "covers/figura_ai.jpg"
+    },
+    {
+      "isbn": "978-3-819075-02-5",
+      "titel": "Facebook Profil zensiert",
+      "beschreibung": "Zensur auf Facebook – Mein Kampf um die Meinungsfreiheit. In einer Zeit, in der soziale Netzwerke wie Facebook zunehmend als digitale Schaltstellen unserer Kommunikation agieren, erleben viele Nutzer eine Einschränkung ihrer Meinungsfreiheit. Beiträge werden gelöscht, Stimmen verstummen, und kreative Gedanken verschwinden spurlos – oft ohne klare Begründung. Dieses Buch erzählt die Geschichte eines Facebook-Nutzers, der sich über drei Jahre lang gegen die Zensur auf der Plattform gewehrt hat. Hunderte seiner wertvollen und kreativen Beiträge wurden entfernt – Texte, die aus seinem Geist und seiner Haltung hervorgegangen sind. Diese Sammlung gibt einen Einblick in eine Vielzahl von Themen, die Facebook nicht mochte, und bewahrt sie für den öffentlichen Diskurs.",
+      "kurzbeschreibung": "Zensur auf Facebook – Mein Kampf um die Meinungsfreiheit - In einer Zeit, in der Zensur bei Facebook üblich ist, sollte man auch etwas seiner kreativen Eigenleistung retten!",
+      "cover": "covers/facebook_zensur.jpg"
+    },
+    {
+      "isbn": "978-3-752964-67-7",
+      "titel": "Cannabis-Anbau – Drinnen",
+      "beschreibung": "Dieses Buch ist ein einfacher Leitfaden zu den Grundlagen des Cannabisanbaus in Innenräumen. Es richtet sich vor allem an Anfänger auf diesem Gebiet. Lernen Sie von Anfang an die wichtigsten Grundlagen kennen – über Anbau, Ernte, Weiterverarbeitung und vieles mehr. Ob Sie CBD- oder THC-reiches Cannabis anbauen wollen, die Grundlagen des Cannabis-Anbaus sind im Grunde immer die gleichen.",
+      "kurzbeschreibung": "Dieses Buch ist ein einfacher Leitfaden zu den Grundlagen des Cannabis-Anbaus in Innenräumen.",
+      "cover": "covers/cannabis_drinnen.jpg"
+    },
+    {
+      "isbn": "978-3-752961-28-7",
+      "titel": "Cannabis-Anbau – Die Grundlagen",
+      "beschreibung": "Dieses Buch ist ein einfacher Leitfaden zu den Grundlagen des Cannabisanbaus. Lernen Sie über Samen und Setzlinge, Erde und Töpfe, Keimung, Dünger, Licht und vieles mehr. Für Anfänger geeignet, um einen Einstieg in den Cannabisanbau zu finden. Ob CBD oder THC – die Basics gelten immer.",
+      "kurzbeschreibung": "Dieses Buch ist ein einfacher Leitfaden zu den Grundlagen des Cannabisanbaus.",
+      "cover": "covers/cannabis_grundlagen.jpg"
+    }
+  ]
+  
