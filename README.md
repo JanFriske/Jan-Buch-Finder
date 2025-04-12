@@ -9,7 +9,7 @@ um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
 ## Funktionen
 
 - **Buchübersicht:** Anzeige von Buchcovern und -beschreibungen.
-- **Hyperlinks:** Direktes Öffnen von Links zu den Online-Shops der Bücher.
+- **Hyperlinks:** Direktes Öffnen von Links zu dem Online-Shop der Bücher.
 - **Personalisierte Ansicht:** Integration eines persönlichen Bildes von Jan Friske.
 - **Benutzerfreundlich:** Einfach zu navigierende Oberfläche mit Tabs für jedes Buch.
 
