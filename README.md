@@ -34,7 +34,7 @@ Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows au
 Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 1. Gehe zum Ordner `dist/`.
-2. Doppelklicke auf `Jan-Buch-Finder.exe`, um die Anwendung zu starten.
+2. Doppelklicke auf `Jan-Buch-Finder Version 1.1.exe`, um die Anwendung zu starten.
 
 ### Anwendung starten
 
