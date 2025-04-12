@@ -1,9 +1,10 @@
 ```markdown
 # Jan-Buch-Finder
 
-**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und Informationen
-zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren Cover, Kurz- und Langbeschreibungen
-sowie ISBN-Nummern. Darüber hinaus gibt es einen Button, um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
+**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und
+Informationen zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern,
+deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern. Darüber hinaus gibt es einen Button,
+um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
 
 ## Funktionen
 
@@ -30,7 +31,9 @@ Die `requirements.txt`-Datei ist im Repository enthalten und listet alle erforde
 
 ### Windows .exe Datei
 
-Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)** im `dist/`-Ordner des Repositories.
+Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)**
+im `dist/`-Ordner des Repositories.
+
 Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 1. Gehe zum Ordner `dist/`.
@@ -57,6 +60,9 @@ Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
 
 ### Erklärungen:
 1. **Projektbeschreibung:** Eine kurze Übersicht, was das Projekt macht.
-2. **Installation:** Beschreibt die notwendigen Schritte, um das Projekt zu installieren und auszuführen, sowohl mit Python als auch mit der `.exe`-Datei.
-3. **Windows .exe Datei:** Weist auf die im Ordner `dist/` vorhandene `.exe`-Datei hin, die von Windows-Nutzern ausgeführt werden kann, ohne dass Python benötigt wird.
-4. **Lizenz:** Es wird auf die Lizenz des Projekts hingewiesen (in diesem Fall wird die MIT-Lizenz angenommen, die du in der `LICENSE`-Datei definieren kannst).
+2. **Installation:** Beschreibt die notwendigen Schritte, um das Projekt zu installieren
+und auszuführen, sowohl mit Python als auch mit der `.exe`-Datei.
+3. **Windows .exe Datei:** Weist auf die im Ordner `dist/` vorhandene `.exe`-Datei hin,
+die von Windows-Nutzern ausgeführt werden kann, ohne dass Python benötigt wird.
+4. **Lizenz:** Es wird auf die Lizenz des Projekts hingewiesen
+(in diesem Fall wird die MIT-Lizenz angenommen, die du in der `LICENSE`-Datei definieren kannst).
