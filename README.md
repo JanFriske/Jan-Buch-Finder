@@ -36,13 +36,15 @@ Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 ### Anwendung starten
 
-1. **Python-Version:** Falls du Python installiert hast, kannst du die Anwendung durch Ausführen des folgenden Befehls im Terminal starten:
+1. **Python-Version:** Falls du Python installiert hast, kannst du die Anwendung
+durch Ausführen des folgenden Befehls im Terminal starten:
 
 ```bash
 python main.py
 ```
 
-2. **.exe-Version:** Falls du die Windows-Executable verwendest, starte einfach die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
+2. **.exe-Version:** Falls du die Windows-Executable verwendest, starte einfach
+3. die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
 
 ## Lizenz
 
@@ -50,7 +52,8 @@ Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
 
 ---
 
-**Jan-Buch-Finder** wurde von **Jan Friske** entwickelt. Wenn du Fragen oder Anmerkungen hast, kannst du mich gerne kontaktieren.
+**Jan-Buch-Finder** wurde von **Jan Friske** entwickelt. Wenn du Fragen oder
+Anmerkungen hast, kannst du mich gerne kontaktieren.
 ```
 
 ### Erklärungen:
