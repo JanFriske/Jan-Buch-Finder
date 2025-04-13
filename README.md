@@ -32,7 +32,7 @@ im `dist/`-Ordner des Repositories.
 Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 1. Gehe zum Ordner `dist/`.
-2. Doppelklicke auf `Jan-Buch-Finder Version 1.1.exe`, um die Anwendung zu starten.
+2. Doppelklicke auf `Jan-Buch-Finder Version 1.2.exe`, um die Anwendung zu starten.
 
 ### Anwendung starten
 
@@ -44,7 +44,7 @@ python main.py
 ```
 
 2. **.exe-Version:** Falls du die Windows-Executable verwendest, starte einfach
-3. die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
+   die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
 
 ## Lizenz
 
