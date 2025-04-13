@@ -4,7 +4,9 @@
 Jan-Buch-Finder ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und
 Informationen zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern,
 deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern. Darüber hinaus gibt es einen Button,
-um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen.
+um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen. In der Version 1.2 kommen 3 weitere
+Link-Buttons hinzu. Ein Button führt zum Facebook Profil von Jan Friske und die anderen beiden Buttons
+verweisen auf die Github-Repositories von Figura KI/Figura AI und Jan-Buch-Finder.
 
 ## Funktionen
 
