@@ -24,14 +24,6 @@ von Jan Friske erhältlich sind.
 - **Tkinter** (standardmäßig in Python enthalten)
 - **Pillow** (für die Verarbeitung von Bildern)
   
-Die benötigten Python-Pakete kannst du mit folgendem Befehl installieren:
-
-```bash
-pip install -r requirements.txt
-```
-
-Die `requirements.txt`-Datei ist im Repository enthalten und listet alle erforderlichen Abhängigkeiten auf.
-
 ### Windows .exe Datei
 
 Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)**
