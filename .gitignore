@@ -1,15 +1,10 @@
-# Ausschluss virtueller Umgebungen
+# Ausschluss von virtuellen Umgebungen
 .venv/
 venv/
 
 # Ausschluss von Build-Ordnern
 build/
+dist/
 
-# Ausschluss von temporären Dateien
-*.log
-*.tmp
-
-# IDE-Ordner
+# IDE-Dateien
 .vs/
-.idea/
-.venv/
