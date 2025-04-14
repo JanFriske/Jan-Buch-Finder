@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-Perfekt! Hier ist die vorbereitete `README.md`-Datei für den lokalen Einsatz inklusive des Bildpfads für den Dunkelmodus-Screenshot. Stelle bitte sicher, dass sich der Screenshot mit dem Dateinamen `darkmode_screenshot.png` im selben Verzeichnis wie die `README.md` befindet oder passe den Pfad entsprechend an.
-
----
-
-### 📄 Inhalt der `README.md` (lokal bereit zur Verwendung):
-
 ```markdown
 # 📚 Jan-Buch-Finder
 
@@ -80,7 +73,11 @@ Die App wurde mit **PyQt5** realisiert und bietet eine moderne, intuitive Benutz
 
 So sieht der **Dark Mode** der Anwendung aus:
 
+<<<<<<< HEAD
 ![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png)
+
+![Screenshot: Jan-Buch-Finder im Dunkelmodus](./darkmode_screenshot.png) 
+
 
 > In dieser Ansicht ist das Buch *„Facebook Profil zensiert“* geöffnet. Die Tabs, Lautstärkeregler, Buttons und Texte passen sich automatisch dem gewählten Modus an.
 
@@ -184,8 +181,6 @@ GitHub: [https://github.com/JanFriske](https://github.com/JanFriske)
 
 ## ⭐ Feedback & Beiträge
 
-Du hast eine Idee zur Verbesserung oder möchtest selbst etwas beitragen?  
-Gerne! Forke das Projekt, erstelle einen Pull Request oder schreib direkt ein Issue.
 
 ---
 
