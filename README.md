@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Perfekt! Hier ist die vorbereitete `README.md`-Datei für den lokalen Einsatz inklusive des Bildpfads für den Dunkelmodus-Screenshot. Stelle bitte sicher, dass sich der Screenshot mit dem Dateinamen `darkmode_screenshot.png` im selben Verzeichnis wie die `README.md` befindet oder passe den Pfad entsprechend an.
 
 ---
@@ -102,6 +103,68 @@ Jan-Buch-Finder/
 ├── klassik.mp3                 # Hintergrundmusik
 └── *.spec                      # Weitere Build-Dateien
 ```
+=======
+# Jan-Buch-Finder
+
+Jan-Buch-Finder ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und
+Informationen zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern,
+deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern. Darüber hinaus gibt es einen Button,
+um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen. In der Version 1.2 kommen 3 weitere
+Link-Buttons hinzu. Ein Button führt zum Facebook Profil von Jan Friske und die anderen beiden Buttons
+verweisen auf die Github-Repositories von Figura KI/Figura AI und Jan-Buch-Finder. In der Version 1.3
+kommen weitere Gestaltungselemente hinzu. Die GUI hat jetzt eine Hintergrundmusik, die man in der Lautstärke
+regeln und auch stumm schalten kann. Die Buchverweise verweisen jetzt direkt auf die Bücher im Shop und
+darüber hinaus gibt es einen Dunkel Modus und einen Licht Modus in der neuen Version 1.3.
+
+## Funktionen
+
+- **Buchübersicht:** Anzeige von Buchcovern und -beschreibungen.
+- **Hyperlinks:** Direktes Öffnen von Links zu dem Online-Shop, bei dem die Bücher
+von Jan Friske erhältlich sind.
+- **Personalisierte Ansicht:** Integration eines persönlichen Bildes von Jan Friske.
+- **Benutzerfreundlich:** Einfach zu navigierende Oberfläche mit Tabs für jedes Buch.
+
+## Installation
+
+### Voraussetzungen
+
+- **Python 3.x++ (empfohlen: 3.7 oder höher)
+- **Tkinter** und PyQt5 (standardmäßig in Python enthalten um Benutzeroberflächen zu gestalten)
+- **Pillow** (für die Verarbeitung von Bildern)
+  
+### Windows .exe Datei
+
+Für Benutzer, die nicht mit Python arbeiten möchten, gibt es 4 Versionen einer **Windows ausführbaren Datei (.exe)**
+im `dist/`-Ordner des Repositories.
+
+Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
+
+1. Gehe zum Ordner `dist/`.
+2. Doppelklicke auf `Jan-Buch-Finder Version 1.2.exe`und wähle dann auf der nächsten Seite,
+   im Dropdown-Menü oben rechts Download.
+
+### Anwendung starten
+
+1. **Python-Version:** Falls du Python installiert hast, kannst du die Anwendung
+durch Ausführen des folgenden Befehls im Terminal starten:
+
+bash
+python main.py
+
+
+2. **.exe-Version:** Falls du die Windows-Executable verwendest, starte einfach
+   die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
+
+## Lizenz
+
+Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
+
+---
+
+**Jan-Buch-Finder** wurde von **Jan Friske** entwickelt. Wenn du Fragen oder
+Anmerkungen hast, kannst du mich gerne kontaktieren.
+
+>>>>>>> 1c58e99480708a4d7a3d1c5342ea0bac9b358c57
 
 ---
 
