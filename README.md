@@ -49,7 +49,7 @@ Versionen des Jan-Buch-Finder findest:
 1. Klicke im Ordner `dist` auf die gewünschte `.exe`-Datei.  
 2. Wähle im Dropdown-Menü oben rechts „Download“, um die Anwendung herunterzuladen.
 
-Die `.exe`-Dateien wurden mit Visual Studio erstellt. Zugehörige `.spec`-Dateien und Builddaten sind ebenfalls im Repository enthalten.
+Die `.exe`-Dateien wurden mit Visual Studio erstellt. Zugehörige main.py, `.spec`-Dateien und die buchdaten.json sind ebenfalls im Repository enthalten.
 
 ---
 
