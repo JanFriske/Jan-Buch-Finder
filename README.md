@@ -13,7 +13,7 @@ Shop-Link-Button, um die Bücher zu erwerben.
 
 - Darstellung der Bücher mit Bild, Beschreibung, ISBN und Shop-Link
 - Navigation über Tabs zwischen verschiedenen Titeln
-- Lautstärkeregler und Musikfunktion (MP3)
+- Lautstärkeregler und Musikfunktion (Bach - Minuet in G MP3)
 - Umschaltbarer Hell-/Dunkelmodus
 - Mit Visual Studio entwickelt (Projektdateien im Repository)
 - Lokale JSON-Datei als Datenquelle (`buchdaten.json`)
