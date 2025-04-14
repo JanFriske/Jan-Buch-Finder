@@ -84,7 +84,7 @@ Jan-Buch-Finder/
 ├── covers/                     # Buchcover
 ├── dist/                       # Builds und ausführbare Dateien (.exe)
 │   ├── Jan-Buch-Finder.exe     # Alle Versionen der Anwendung
-│   └── ...                     # (Version 1, 1.1, 1.2, 1.3)
+│   └── ...                     # (Version 1.0, 1.1, 1.2, 1.3)
 ├── buchdaten.json              # Buchdaten (Titel, Beschreibung, ISBN etc.)
 ├── main.py                     # Hauptprogramm
 ├── main.spec                   # Build-Spezifikation
