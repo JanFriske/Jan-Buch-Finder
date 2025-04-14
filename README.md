@@ -1,11 +1,11 @@
 ```markdown
 # 📚 Jan-Buch-Finder
 
-__Jan-Buch-Finder__ ist eine Desktop-Anwendung, mit der du Bücher von
-**Jan Friske** durchsuchen und Informationen zu den verfügbaren Titeln
+Jan-Buch-Finder ist eine Desktop-Anwendung, mit der du Bücher von
+Jan Friske durchsuchen und Informationen zu den verfügbaren Titeln
 anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren
-**Cover**, **Kurz- und Langbeschreibungen**, sowie **ISBN** und einen
-**Shop-Link-Button**, um die Bücher zu erwerben.
+Cover, Kurz- und Langbeschreibungen, sowie ISBN und einen
+Shop-Link-Button, um die Bücher zu erwerben.
 
 ---
 
@@ -25,7 +25,7 @@ anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren
 
 ### Option 1: Ausführen per Python (für Entwickler)
 
-1. **Python 3.x** installieren.
+1. Python 3.x installieren.
 2. Abhängigkeiten installieren:
    ```bash
    pip install PyQt5
@@ -38,7 +38,7 @@ anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren
 ### Option 2: Nutzung der Windows-Executable
 
 Navigiere in den Ordner `dist`, wo du 4 verschiedene
-Versionen des **Jan-Buch-Finder** findest:
+Versionen des Jan-Buch-Finder findest:
 
 - `Version 1`
 - `Version 1.1`
@@ -55,7 +55,7 @@ Die `.exe`-Dateien wurden mit Visual Studio erstellt. Zugehörige `.spec`-Dateie
 
 ## 🖥️ Benutzeroberfläche
 
-Die App wurde mit **PyQt5** realisiert und bietet eine moderne, intuitive Benutzerführung – wahlweise im hellen oder dunklen Modus.
+Die App wurde mit PyQt5 realisiert und bietet eine moderne, intuitive Benutzerführung – wahlweise im hellen oder dunklen Modus.
 
 - 📸 Darstellung von Buchcovern, Autorenfoto und Icons
 - 🎵 Musikuntermalung mit Lautstärkeregler
@@ -67,7 +67,7 @@ Die App wurde mit **PyQt5** realisiert und bietet eine moderne, intuitive Benutz
 
 ### 🌑 Dunkelmodus (Dark Mode)
 
-So sieht der **Dunkelmodus** der Anwendung aus:
+So sieht der Dunkelmodus der Anwendung aus:
 
 ![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png)
 
@@ -112,7 +112,7 @@ GitHub: [https://github.com/JanFriske](https://github.com/JanFriske)
 
 ## ⭐ Feedback & Beiträge
 
-Vielen Dank, dass du **Jan-Buch-Finder** nutzt!  
+Vielen Dank, dass du Jan-Buch-Finder nutzt!  
 Wenn du Fragen oder Anmerkungen hast oder dich beteiligen möchtest, freue ich mich über dein Feedback.
 ```
 
