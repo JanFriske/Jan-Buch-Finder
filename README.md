@@ -108,7 +108,7 @@ Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
 ## 👤 Autor
 
 **Jan Friske**  
-Website: [Link zum Shop oder Profil einfügen](https://www.epubli.com/autoren/jan-friske-33400)]  
+Website: [Epubli-Shop](https://www.epubli.com/autoren/jan-friske-33400)]  
 GitHub: [https://github.com/JanFriske](https://github.com/JanFriske)
 
 ---
