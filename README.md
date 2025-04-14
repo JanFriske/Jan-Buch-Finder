@@ -61,7 +61,7 @@ Die App wurde mit PyQt5 realisiert und bietet eine moderne, intuitive Benutzerf�
 - 🎵 Musikuntermalung mit Lautstärkeregler
 - 🌗 Umschaltbarer Licht-/Dunkelmodus
 - 🧩 Navigation über Tabs
-- 🔗 Externe Links zu Shop & Social Media
+- 🔗 Externe Links zu Shop, Social Media & Repositories
 
 ---
 
