@@ -22,19 +22,20 @@ von Jan Friske erhältlich sind.
 
 ### Voraussetzungen
 
-- **Python 3.x** (empfohlen: 3.7 oder höher)
-- **Tkinter** (standardmäßig in Python enthalten)
+- **Python 3.x++ (empfohlen: 3.7 oder höher)
+- **Tkinter** und PyQt5 (standardmäßig in Python enthalten um Benutzeroberflächen zu gestalten)
 - **Pillow** (für die Verarbeitung von Bildern)
   
 ### Windows .exe Datei
 
-Für Benutzer, die nicht mit Python arbeiten möchten, gibt es eine **Windows ausführbare Datei (.exe)**
+Für Benutzer, die nicht mit Python arbeiten möchten, gibt es 4 Versionen einer **Windows ausführbaren Datei (.exe)**
 im `dist/`-Ordner des Repositories.
 
 Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 
 1. Gehe zum Ordner `dist/`.
-2. Doppelklicke auf `Jan-Buch-Finder Version 1.2.exe`, um die Anwendung zu starten.
+2. Doppelklicke auf `Jan-Buch-Finder Version 1.2.exe`und wähle dann auf der nächsten Seite,
+   im Dropdown-Menü oben rechts Download.
 
 ### Anwendung starten
 
