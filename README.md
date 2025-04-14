@@ -73,7 +73,13 @@ Die App wurde mit **PyQt5** realisiert und bietet eine moderne, intuitive Benutz
 
 So sieht der **Dark Mode** der Anwendung aus:
 
+<<<<<<< HEAD
 ![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png)
+=======
+<<<<<<< HEAD
+![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png) 
+
+>>>>>>> 999be730d1f3001f4fd55dff30f80b582a3ee31a
 
 > In dieser Ansicht ist das Buch *„Facebook Profil zensiert“* geöffnet. Die Tabs, Lautstärkeregler, Buttons und Texte passen sich automatisch dem gewählten Modus an.
 
