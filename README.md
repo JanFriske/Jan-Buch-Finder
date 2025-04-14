@@ -38,7 +38,7 @@ Du kannst diese `.exe` direkt ausführen, ohne Python installieren zu müssen.
 1. **Python-Version:** Falls du Python installiert hast, kannst du die Anwendung
 durch Ausführen des folgenden Befehls im Terminal starten:
 
-```bash
+bash
 python main.py
 
 
