@@ -1,8 +1,15 @@
-# Visual Studio
+# Ausschluss virtueller Umgebungen
+.venv/
+venv/
+
+# Ausschluss von Build-Ordnern
+build/
+
+# Ausschluss von temporären Dateien
+*.log
+*.tmp
+
+# IDE-Ordner
 .vs/
-*.user
-*.userosscache
-*.suo
-*.cache
-*.pdb
-*.vspscc
+.idea/
+.venv/
