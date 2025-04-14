@@ -5,7 +5,10 @@ Informationen zu den verfügbaren Titeln anzeigen kannst. Die Anwendung zeigt ei
 deren Cover, Kurz- und Langbeschreibungen sowie ISBN-Nummern. Darüber hinaus gibt es einen Button,
 um direkt zum Online-Shop zu gelangen, um die Bücher zu kaufen. In der Version 1.2 kommen 3 weitere
 Link-Buttons hinzu. Ein Button führt zum Facebook Profil von Jan Friske und die anderen beiden Buttons
-verweisen auf die Github-Repositories von Figura KI/Figura AI und Jan-Buch-Finder.
+verweisen auf die Github-Repositories von Figura KI/Figura AI und Jan-Buch-Finder. In der Version 1.3
+kommen weitere Gestaltungselemente hinzu. Die GUI hat jetzt eine Hintergrundmusik, die man in der Lautstärke
+regeln und auch stumm schalten kann. Die Buchverweise verweisen jetzt direkt auf die Bücher im Shop und
+darüber hinaus gibt es einen Dunkel Modus und einen Licht Modus in der neuen Version 1.3.
 
 ## Funktionen
 
