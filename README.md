@@ -15,7 +15,7 @@ Shop-Link-Button, um die Bücher zu erwerben.
 - Navigation über Tabs zwischen verschiedenen Titeln
 - Lautstärkeregler und Musikfunktion (MP3)
 - Umschaltbarer Hell-/Dunkelmodus
-- Mit **Visual Studio** entwickelt (Projektdateien im Repository)
+- Mit Visual Studio entwickelt (Projektdateien im Repository)
 - Lokale JSON-Datei als Datenquelle (`buchdaten.json`)
 - Eigenes Icon & MP3-Datei enthalten
 
