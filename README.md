@@ -78,23 +78,23 @@ Hier ist eine zusammenhängende und bereinigte Darstellung der Projektstruktur a
 ```markdown
 ## 📁 Projektstruktur
 
-```
+## 📁 Projektstruktur
+
 Jan-Buch-Finder/
-├── assets/                      # Screenshots, Icons etc. (z.B. darkmode_screenshot.png)
-├── covers/                      # Buchcover
-├── dist/                        # Builds und ausführbare Dateien (.exe)
-├── .gitignore                   # Git-Konfiguration
-├── Jan-Buch-Finder Version 1.2.spec
-├── Jan-Buch-Finder Version 1.3.spec
-├── LICENCE.txt                  # Lizenzinformationen
-├── README.md                    # Diese Datei
-├── buchdaten.json               # Buchdaten (Titel, Beschreibungen, ISBN etc.)
-├── jan_2.jpg                    # Zusatzbild (z.B. Autorenfoto)
-├── jan_icon.ico                 # Anwendungs-Icon
-├── klassik.mp3                  # Hintergrundmusik
-├── main.py                      # Hauptprogramm
-└── main.spec                    # Build-Spezifikation
-```
+├── assets/                     # Screenshots, Icons etc. (z.B. darkmode_screenshot.png)
+├── covers/                     # Buchcover
+├── dist/                       # Builds und ausführbare Dateien (.exe)
+│   ├── Jan-Buch-Finder.exe     # Alle Versionen der Anwendung
+│   └── ...                     # (Version 1, 1.1, 1.2, 1.3)
+├── buchdaten.json              # Buchdaten (Titel, Beschreibung, ISBN etc.)
+├── main.py                     # Hauptprogramm
+├── main.spec                   # Build-Spezifikation
+├── README.md                   # Diese Datei
+├── LICENCE.txt                 # Lizenzinformationen
+├── jan_icon.ico                # App-Icon
+├── klassik.mp3                 # Hintergrundmusik
+└── *.spec                      # Weitere Build-Dateien
+
 
 Kopiere diesen Abschnitt in deine README.md, um die aktuelle Verzeichnisaufteilung übersichtlich darzustellen.
 
