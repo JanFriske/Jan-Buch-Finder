@@ -76,7 +76,6 @@ So sieht der **Dark Mode** der Anwendung aus:
 Hier ist eine zusammenhängende und bereinigte Darstellung der Projektstruktur als ein einziger, konsistenter Block:
 
 ```markdown
-## 📁 Projektstruktur
 
 ## 📁 Projektstruktur
 
