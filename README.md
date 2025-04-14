@@ -71,7 +71,7 @@ So sieht der Dunkelmodus der Anwendung aus:
 
 ![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png)
 
-> In dieser Ansicht ist das Buch *„Facebook Profil zensiert“* geöffnet. Die Tabs, Lautstärkeregler, Buttons und Texte passen sich automatisch dem gewählten Modus an.
+> In dieser Ansicht ist das Buch *„Ein stark zensiertes Facebook Profil“* geöffnet. Die Tabs, Lautstärkeregler, Buttons und Texte passen sich automatisch dem gewählten Modus an.
 
 ---
 
