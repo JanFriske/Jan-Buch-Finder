@@ -1,4 +1,3 @@
-```markdown
 # Jan-Buch-Finder
 
 Jan-Buch-Finder ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und
@@ -41,7 +40,7 @@ durch Ausführen des folgenden Befehls im Terminal starten:
 
 ```bash
 python main.py
-```
+
 
 2. **.exe-Version:** Falls du die Windows-Executable verwendest, starte einfach
    die Datei `Jan-Buch-Finder.exe` aus dem `dist/`-Ordner.
@@ -54,7 +53,7 @@ Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
 
 **Jan-Buch-Finder** wurde von **Jan Friske** entwickelt. Wenn du Fragen oder
 Anmerkungen hast, kannst du mich gerne kontaktieren.
-```
+
 
 ### Erklärungen:
 1. **Projektbeschreibung:** Eine kurze Übersicht, was das Projekt macht.
