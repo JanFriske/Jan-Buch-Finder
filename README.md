@@ -40,7 +40,7 @@ Shop-Link-Button, um die Bücher zu erwerben.
 Navigiere in den Ordner `dist`, wo du 4 verschiedene
 Versionen des Jan-Buch-Finder findest:
 
-- `Version 1`
+- `Version 1.0`
 - `Version 1.1`
 - `Version 1.2`
 - `Version 1.3`
