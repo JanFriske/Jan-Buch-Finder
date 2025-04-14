@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-Perfekt! Hier ist die vorbereitete `README.md`-Datei für den lokalen Einsatz inklusive des Bildpfads für den Dunkelmodus-Screenshot. Stelle bitte sicher, dass sich der Screenshot mit dem Dateinamen `darkmode_screenshot.png` im selben Verzeichnis wie die `README.md` befindet oder passe den Pfad entsprechend an.
-
----
-
-### 📄 Inhalt der `README.md` (lokal bereit zur Verwendung):
-
 ```markdown
 # 📚 Jan-Buch-Finder
 
@@ -184,8 +177,6 @@ GitHub: [https://github.com/JanFriske](https://github.com/JanFriske)
 
 ## ⭐ Feedback & Beiträge
 
-Du hast eine Idee zur Verbesserung oder möchtest selbst etwas beitragen?  
-Gerne! Forke das Projekt, erstelle einen Pull Request oder schreib direkt ein Issue.
 
 ---
 
