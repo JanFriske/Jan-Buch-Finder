@@ -1,10 +1,11 @@
-Hier ist eine bereinigte, einwandfreie Version der README.md, die alle Inhalte konsolidiert und ohne doppelte oder fehlerhafte Abschnitte auskommt:
-
 ```markdown
 # 📚 Jan-Buch-Finder
 
-**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von **Jan Friske** durchsuchen und Informationen zu den verfügbaren Titeln anzeigen kannst.  
-Die Anwendung zeigt eine Liste von Büchern, deren **Cover**, **Kurz- und Langbeschreibungen**, sowie **ISBN** und einen **Shop-Link-Button**, um die Bücher zu erwerben.
+**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von
+**Jan Friske** durchsuchen und Informationen zu den verfügbaren Titeln
+anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren
+**Cover**, **Kurz- und Langbeschreibungen**, sowie **ISBN** und einen
+**Shop-Link-Button**, um die Bücher zu erwerben.
 
 ---
 
@@ -36,7 +37,8 @@ Die Anwendung zeigt eine Liste von Büchern, deren **Cover**, **Kurz- und Langbe
 
 ### Option 2: Nutzung der Windows-Executable
 
-Navigiere in den Ordner `dist`, wo du verschiedene Versionen des **Jan-Buch-Finder** findest:
+Navigiere in den Ordner `dist`, wo du 4 verschiedene
+Versionen des **Jan-Buch-Finder** findest:
 
 - `Version 1`
 - `Version 1.1`
@@ -73,8 +75,6 @@ So sieht der **Dunkelmodus** der Anwendung aus:
 
 ---
 
-Hier ist eine zusammenhängende und bereinigte Darstellung der Projektstruktur als ein einziger, konsistenter Block:
-
 ```markdown
 
 ## 📁 Projektstruktur
@@ -93,9 +93,6 @@ Jan-Buch-Finder/
 ├── jan_icon.ico                # App-Icon
 ├── klassik.mp3                 # Hintergrundmusik
 └── *.spec                      # Weitere Build-Dateien
-
-
-Kopiere diesen Abschnitt in deine README.md, um die aktuelle Verzeichnisaufteilung übersichtlich darzustellen.
 
 ---
 
