@@ -96,7 +96,6 @@ Jan-Buch-Finder/
 ├── klassik.mp3                 # Hintergrundmusik
 └── *.spec                      # Weitere Build-Dateien
 ```
-=======
 # Jan-Buch-Finder
 
 Jan-Buch-Finder ist eine Desktop-Anwendung, mit der du Bücher von Jan Friske durchsuchen und
@@ -156,8 +155,6 @@ Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
 
 **Jan-Buch-Finder** wurde von **Jan Friske** entwickelt. Wenn du Fragen oder
 Anmerkungen hast, kannst du mich gerne kontaktieren.
-
->>>>>>> 1c58e99480708a4d7a3d1c5342ea0bac9b358c57
 
 ---
 
