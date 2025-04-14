@@ -65,7 +65,7 @@ Die App wurde mit **PyQt5** realisiert und bietet eine moderne, intuitive Benutz
 
 ### 🌑 Dunkelmodus (Dark Mode)
 
-So sieht der **Dark Mode** der Anwendung aus:
+So sieht der **Dunkelmodus** der Anwendung aus:
 
 ![Screenshot: Jan-Buch-Finder im Dunkelmodus](assets/darkmode_screenshot.png)
 
@@ -108,7 +108,7 @@ Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
 ## 👤 Autor
 
 **Jan Friske**  
-Website: [Link zum Shop oder Profil einfügen]  
+Website: [[Link zum Shop oder Profil einfügen](https://www.epubli.com/autoren/jan-friske-33400)]  
 GitHub: [https://github.com/JanFriske](https://github.com/JanFriske)
 
 ---
