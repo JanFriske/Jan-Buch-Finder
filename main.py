@@ -1,227 +1,217 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
-from PIL import Image, ImageTk
+import sys
 import json
 import os
-import sys
-import webbrowser
-import functools
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QLabel, QPushButton, QTextEdit, QVBoxLayout, QHBoxLayout,
+    QTabWidget, QScrollArea, QSlider
+)
+from PyQt5.QtGui import QPixmap, QFont, QDesktopServices
+from PyQt5.QtCore import Qt, QUrl
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
+
 
 def get_resource_path(relative_path):
-    """
-    Ermittelt den absoluten Pfad für eine Ressource.
-    Bei einer gepackten .exe (mit PyInstaller) wird sys._MEIPASS genutzt.
-    """
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
 
+
 def lade_buchdaten():
-    """
-    Lädt die Buchdaten aus der JSON-Datei. Falls die Datei nicht 
-    existiert oder fehlerhaft ist, werden Fallback-Daten genutzt.
-    Nach dem Laden wird geprüft, ob für bestimmte Buchtitel der Schlüssel
-    "buttons" fehlt – falls ja, wird er ergänzt.
-    """
-    fallback_buchdaten = [
-        {
-            "isbn": "978-3-819071-79-9",
-            "titel": "Figura KI/Figura AI",
-            "beschreibung": "Tauchen Sie ein in die Welt fortschrittlicher künstlicher Intelligenz mit Figura-KI/Figura-AI.",
-            "kurzbeschreibung": "Figura-KI/Figura-AI: Multimodular KI.",
-            "cover": "covers/figura_ai.jpg",
-            "link": "https://www.epubli.com/shop/figura-ki-figura-ai-9783819071799",
-            "buttons": [
-                {
-                    "text": "GitHub-Repository von Figura KI",
-                    "url": "https://github.com/JanFriske/Figura-KI---Figura-AI"
-                }
-            ]
-        },
-        {
-            "isbn": "978-3-819075-02-5",
-            "titel": "Facebook Profil zensiert",
-            "beschreibung": "Dieses Buch erzählt die Geschichte eines Facebook-Nutzers, der sich gegen Zensur wehrte.",
-            "kurzbeschreibung": "Facebook: Zensur und Widerstand.",
-            "cover": "covers/facebook_zensur.jpg",
-            "link": "https://www.epubli.com/shop/ein-stark-zensiertes-facebook-profil-9783819075025",
-            "buttons": [
-                {
-                    "text": "Zu meinem Facebook-Profil",
-                    "url": "https://www.facebook.com/share/165fX45xHq/"
-                }
-            ]
-        },
-        {
-            "isbn": "978-3-752964-67-7",
-            "titel": "Cannabis-Anbau – Drinnen",
-            "beschreibung": "Ein einfacher Leitfaden zum Cannabisanbau in Innenräumen.",
-            "kurzbeschreibung": "Grundlagen des Cannabis-Anbaus.",
-            "cover": "covers/cannabis_drinnen.jpg",
-            "link": "https://www.epubli.com/shop/cannabis-anbau-drinnen-9783752964677"
-        },
-        {
-            "isbn": "978-3-752961-28-7",
-            "titel": "Cannabis-Anbau – Die Grundlagen",
-            "beschreibung": "Ein umfassender Leitfaden zu den Grundlagen des Cannabisanbaus.",
-            "kurzbeschreibung": "Cannabis-Anbau für Anfänger.",
-            "cover": "covers/cannabis_grundlagen.jpg",
-            "link": "https://www.epubli.com/shop/cannabis-anbau-die-grundlagen-9783752961287"
-        }
-    ]
-    
     pfad = get_resource_path("buchdaten.json")
     try:
         with open(pfad, "r", encoding="utf-8") as f:
-            daten = json.load(f)
-            print(f"[DEBUG] Buchdaten aus Datei geladen: {len(daten)} Bücher gefunden.")
-            buchdaten = daten
-    except Exception as e:
-        print(f"[DEBUG] Fehler beim Laden von 'buchdaten.json': {e}\nVerwende Fallback-Daten.")
-        buchdaten = fallback_buchdaten
+            return json.load(f)
+    except:
+        return []
 
-    # Ergänze fehlende "buttons" für bestimmte Buchtitel, falls nicht vorhanden
-    for buch in buchdaten:
-        titel = buch.get("titel", "")
-        if titel == "Figura KI/Figura AI" and "buttons" not in buch:
-            buch["buttons"] = [{
-                "text": "GitHub-Repository von Figura KI",
-                "url": "https://github.com/JanFriske/Figura-KI---Figura-AI"
-            }]
-        if titel == "Facebook Profil zensiert" and "buttons" not in buch:
-            buch["buttons"] = [{
-                "text": "Zu meinem Facebook-Profil",
-                "url": "https://www.facebook.com/share/165fX45xHq/"
-            }]
-        # Debug-Ausgabe der Keys für jedes Buch
-        print(f"[DEBUG] Buch '{titel}' enthält keys: {list(buch.keys())}")
-        if "buttons" in buch:
-            print(f"        Zusatz-Buttons: {buch['buttons']}")
+
+class BuchTab(QWidget):
+    def __init__(self, buch):
+        super().__init__()
+        layout = QVBoxLayout()
+        layout.setSpacing(20)
+        layout.setContentsMargins(30, 20, 30, 20)
+
+        titel = QLabel(buch.get("titel", "Unbekannter Titel"))
+        titel.setFont(QFont("Arial", 20, QFont.Bold))
+        titel.setAlignment(Qt.AlignCenter)
+        layout.addWidget(titel)
+
+        inhalt_layout = QHBoxLayout()
+        inhalt_layout.setSpacing(30)
+        inhalt_layout.setContentsMargins(30, 0, 30, 0)
+
+        kurz_label = QLabel(buch.get("kurzbeschreibung", ""))
+        kurz_label.setWordWrap(True)
+        kurz_label.setFont(QFont("Arial", 13))
+        kurz_label.setFixedWidth(260)
+        kurz_label.setStyleSheet("padding: 10px;")
+        inhalt_layout.addWidget(kurz_label)
+
+        cover_path = get_resource_path(buch.get("cover", ""))
+        pixmap = QPixmap(cover_path)
+        if not pixmap.isNull():
+            pixmap = pixmap.scaled(300, 450, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            cover_label = QLabel()
+            cover_label.setPixmap(pixmap)
+            cover_label.setAlignment(Qt.AlignCenter)
+            inhalt_layout.addWidget(cover_label)
         else:
-            print("        Zusatz-Buttons: Nicht vorhanden.")
+            inhalt_layout.addWidget(QLabel("Kein Cover verfügbar"))
 
-    return buchdaten
+        beschreibung = QTextEdit()
+        beschreibung.setText(buch.get("beschreibung", ""))
+        beschreibung.setFont(QFont("Arial", 13))
+        beschreibung.setReadOnly(True)
+        # Erhöhe die Breite der Beschreibung um ca. 30%
+        beschreibung.setFixedWidth(880)
+        beschreibung.setStyleSheet("padding: 10px;")
+        inhalt_layout.addWidget(beschreibung)
 
-class JanBuchFinderApp:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Jan-Buch-Finder Version 1.2 von Jan Friske")
-        self.buchdaten = lade_buchdaten()
+        layout.addLayout(inhalt_layout)
 
-        self.setup_oben_frame()
-        self.setup_notebook()
+        isbn = QLabel(f"ISBN: {buch.get('isbn', 'Keine ISBN')}")
+        isbn.setFont(QFont("Arial", 11, italic=True))
+        isbn.setStyleSheet("color: gray;")
+        isbn.setAlignment(Qt.AlignCenter)
+        layout.addWidget(isbn)
 
-    def setup_oben_frame(self):
-        """Erstellt oben links das persönliche Bild plus einen Button zum Jan-Buch-Finder Repository."""
-        oben_frame = tk.Frame(self.root)
-        oben_frame.pack(fill="x", padx=10, pady=10, anchor="nw")
+        button_layout = QHBoxLayout()
+        button_layout.setAlignment(Qt.AlignCenter)
 
-        # Persönliches Bild
-        bild_pfad = get_resource_path("jan_2.jpg")
-        try:
-            image = Image.open(bild_pfad).resize((150, 150), Image.LANCZOS)
-            photo = ImageTk.PhotoImage(image)
-            bild_label = tk.Label(oben_frame, image=photo)
-            bild_label.image = photo
-            bild_label.pack(side="left", padx=(0, 20))
-        except Exception as e:
-            print(f"[DEBUG] Fehler beim Laden des persönlichen Bildes: {e}")
-            tk.Label(oben_frame, text="(Kein Bild verfügbar)").pack(side="left", padx=(0, 20))
+        shop_button = QPushButton("Zum Shop")
+        shop_button.setStyleSheet("padding: 8px 16px;")
+        shop_button.setFont(QFont("Arial", 11))
+        shop_button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(buch.get("link", "#"))))
+        button_layout.addWidget(shop_button)
 
-        # Repo-Button
-        repo_button = tk.Button(
-            oben_frame,
-            text="Zum Jan-Buch-Finder Repository",
-            font=("Helvetica", 9),
-            fg="white",
-            bg="#24292e",
-            cursor="hand2",
-            command=lambda: self.oeffne_link("https://github.com/JanFriske/Jan-Buch-Finder")
-        )
-        repo_button.pack(side="left")
+        for btn in buch.get("buttons", []):
+            button = QPushButton(btn.get("text", "Mehr Infos"))
+            button.setStyleSheet("padding: 8px 16px;")
+            button.setFont(QFont("Arial", 11))
+            button.clicked.connect(lambda _, url=btn.get("url", "#"): QDesktopServices.openUrl(QUrl(url)))
+            button_layout.addWidget(button)
 
-    def setup_notebook(self):
-        """Erstellt das Notebook und den Titel."""
-        title_label = tk.Label(self.root, text="Jan-Buch-Finder Version 1.2 von Jan Friske", font=("Helvetica", 16, "bold"))
-        title_label.pack(pady=5)
+        layout.addLayout(button_layout)
+        self.setLayout(layout)
 
-        self.notebook = ttk.Notebook(self.root)
-        self.notebook.pack(expand=True, fill="both", padx=10, pady=10)
-        self.erstelle_tabs()
 
-    def erstelle_tabs(self):
-        """Erstellt für jedes Buch einen Tab im Notebook."""
-        for buch in self.buchdaten:
-            tab = ttk.Frame(self.notebook)
-            self.notebook.add(tab, text=buch.get("titel", "Kein Titel"))
-            self.erzeuge_inhalt(tab, buch)
+class JanBuchFinder(QWidget):
+    def __init__(self):
+        super().__init__()
+        # Titelleiste bleibt unverändert
+        self.setWindowTitle("Jan-Buch-Finder 1.3 – von Jan Friske")
+        self.setMinimumSize(1100, 700)
+        self.darkmode = False
 
-    def erzeuge_inhalt(self, tab, buch):
-        """Erzeugt den Inhalt eines Tabs (Cover, Kurzbeschreibung, Buttons, ISBN, lange Beschreibung)."""
-        self.zeige_cover(tab, buch)
-        self.zeige_kurzbeschreibung(tab, buch)
-        self.zeige_buttons(tab, buch)
-        self.zeige_isbn(tab, buch)
-        self.zeige_lange_beschreibung(tab, buch)
+        self.player = QMediaPlayer()
+        music_path = get_resource_path("klassik.mp3")
+        self.player.setMedia(QMediaContent(QUrl.fromLocalFile(music_path)))
+        self.player.setVolume(50)
+        self.player.play()
+        self.player.mediaStatusChanged.connect(self.loop_music)
 
-    def zeige_cover(self, tab, buch):
-        cover_pfad = get_resource_path(buch.get("cover", ""))
-        try:
-            image = Image.open(cover_pfad).resize((150, 200))
-            photo = ImageTk.PhotoImage(image)
-            label = tk.Label(tab, image=photo)
-            label.image = photo
-            label.pack(pady=10)
-        except Exception as e:
-            print(f"[DEBUG] Fehler beim Laden des Covers für '{buch.get('titel')}': {e}")
-            tk.Label(tab, text="Kein Cover verfügbar").pack(pady=10)
+        main_layout = QVBoxLayout()
+        main_layout.setSpacing(20)
+        main_layout.setContentsMargins(20, 20, 20, 20)
 
-    def zeige_kurzbeschreibung(self, tab, buch):
-        tk.Label(tab, text=buch.get("kurzbeschreibung", ""), wraplength=500, font=("Helvetica", 11)).pack(pady=5)
-
-    def zeige_buttons(self, tab, buch):
-        """Erstellt alle Buttons in einem einzigen Frame (Shop-Link plus Zusatz-Buttons)."""
-        frame = tk.Frame(tab)
-        frame.pack(fill="x", padx=10, pady=5)
-
-        # Shop-Link-Button (immer vorhanden)
-        shop_link = buch.get("link", "https://www.epubli.com/?s=Jan+Friske")
-        self.erzeuge_button(frame, "Zum Shop", shop_link, fg="blue", underline=True)
-
-        # Zusatz-Buttons (falls vorhanden)
-        zusatz_buttons = buch.get("buttons", [])
-        if zusatz_buttons:
-            for btn in zusatz_buttons:
-                text = btn.get("text", "Mehr Infos")
-                url = btn.get("url", "")
-                self.erzeuge_button(frame, text, url, fg="black", underline=False)
+        # Oberer Bereich: Dreispaltiges Layout (links: Bild+Repo, Mitte: Titel, rechts: Steuerung)
+        top_layout = QHBoxLayout()
+        top_layout.setContentsMargins(0, 0, 0, 0)
+        
+        # Linke Spalte: Bild und Repository-Button
+        left_top_layout = QVBoxLayout()
+        left_top_layout.setAlignment(Qt.AlignCenter)
+        bild_label = QLabel()
+        jan_bild = QPixmap(get_resource_path("jan_2.jpg"))
+        if not jan_bild.isNull():
+            jan_bild = jan_bild.scaled(120, 120, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            bild_label.setPixmap(jan_bild)
         else:
-            print(f"[DEBUG] Buch '{buch.get('titel')}' enthält keine zusätzlichen Buttons.")
+            bild_label.setText("Kein Bild")
+        left_top_layout.addWidget(bild_label)
+        repo_button = QPushButton("Zum Jan-Buch-Finder Repository")
+        repo_button.clicked.connect(lambda: QDesktopServices.openUrl(QUrl("https://github.com/JanFriske/Jan-Buch-Finder")))
+        left_top_layout.addWidget(repo_button)
+        top_layout.addLayout(left_top_layout, 1)
+        
+        # Mittlere Spalte: Titel (zentriert)
+        center_layout = QVBoxLayout()
+        center_layout.setAlignment(Qt.AlignCenter)
+        title_label = QLabel("Jan-Buch-Finder 1.3")
+        title_label.setFont(QFont("Arial", 18, QFont.Bold))
+        title_label.setAlignment(Qt.AlignCenter)
+        center_layout.addWidget(title_label)
+        top_layout.addLayout(center_layout, 3)
+        
+        # Rechte Spalte: Steuerung (Mute, Lautstärke, Dunkel-/Lichtmodus)
+        right_layout = QVBoxLayout()
+        right_layout.setAlignment(Qt.AlignCenter)
+        self.mute_button = QPushButton("🔇 Musik stummschalten")
+        self.mute_button.clicked.connect(self.toggle_mute)
+        right_layout.addWidget(self.mute_button)
+        volume_label = QLabel("Lautstärke")
+        right_layout.addWidget(volume_label)
+        volume_slider = QSlider(Qt.Horizontal)
+        volume_slider.setRange(0, 100)
+        volume_slider.setValue(50)
+        volume_slider.valueChanged.connect(self.player.setVolume)
+        right_layout.addWidget(volume_slider)
+        self.darkmode_button = QPushButton("🌙 Dunkelmodus")
+        self.darkmode_button.clicked.connect(self.toggle_darkmode)
+        right_layout.addWidget(self.darkmode_button)
+        top_layout.addLayout(right_layout, 1)
+        
+        main_layout.addLayout(top_layout)
+        
+        buchdaten = lade_buchdaten()
+        tabs = QTabWidget()
+        tabs.setTabPosition(QTabWidget.North)  # Reiter horizontal oben
+        tabs.setStyleSheet("""
+            QTabWidget::pane { margin: 0px; padding: 0px; }
+            QTabBar::tab { background-color: #f0f0f0; color: black; padding: 10px; border: 1px solid #ccc; }
+            QTabBar::tab:selected { background-color: #ddd; color: black; }
+        """)
+        for buch in lade_buchdaten():
+            tab = BuchTab(buch)
+            scroll = QScrollArea()
+            scroll.setWidgetResizable(True)
+            scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+            scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+            scroll.setWidget(tab)
+            tabs.addTab(scroll, buch.get("titel", "Buch"))
+        main_layout.addWidget(tabs)
+        self.setLayout(main_layout)
 
-    def zeige_isbn(self, tab, buch):
-        tk.Label(tab, text=f"ISBN: {buch.get('isbn', 'Keine ISBN')}", font=("Helvetica", 9, "italic"), fg="gray").pack(pady=10)
+    def toggle_mute(self):
+        muted = not self.player.isMuted()
+        self.player.setMuted(muted)
+        self.mute_button.setText("🔈 Musik aktivieren" if muted else "🔇 Musik stummschalten")
 
-    def zeige_lange_beschreibung(self, tab, buch):
-        text_widget = tk.Text(tab, wrap="word", height=10, font=("Helvetica", 10))
-        text_widget.insert("1.0", buch.get("beschreibung", ""))
-        text_widget.config(state="disabled")
-        text_widget.pack(fill="both", expand=True, padx=10, pady=10)
+    def toggle_darkmode(self):
+        self.darkmode = not self.darkmode
+        if self.darkmode:
+            self.setStyleSheet("""
+                QWidget { background-color: #121212; color: #ffffff; }
+                QTextEdit, QLabel { background-color: #1e1e1e; color: #ffffff; }
+                QPushButton { background-color: #2c2c2c; color: #ffffff; }
+                QTabWidget::pane { margin: 0px; padding: 0px; }
+                QTabBar::tab { background-color: #333333; color: #ffffff; padding: 10px; border: 1px solid #555555; }\n
+                QTabBar::tab:selected { background-color: #555555; color: black; }\n
+            """)
+            self.darkmode_button.setText("☀️ Lichtmodus")
+        else:
+            self.setStyleSheet("")
+            self.darkmode_button.setText("🌙 Dunkelmodus")
 
-    def erzeuge_button(self, parent, text, url, fg="black", underline=False):
-        if not url:
-            return
-        font = ("Helvetica", 10, "underline") if underline else ("Helvetica", 10)
-        btn = tk.Button(parent, text=text, font=font, fg=fg, cursor="hand2",
-                        command=lambda: self.oeffne_link(url))
-        btn.pack(side="left", padx=5)
+    def loop_music(self, status):
+        if status == QMediaPlayer.EndOfMedia:
+            self.player.setPosition(0)
+            self.player.play()
 
-    def oeffne_link(self, url):
-        try:
-            webbrowser.open_new_tab(url)
-        except Exception as e:
-            messagebox.showerror("Fehler", f"Der Link konnte nicht geöffnet werden: {e}")
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    app = JanBuchFinderApp(root)
-    root.mainloop()
+    app = QApplication(sys.argv)
+    window = JanBuchFinder()
+    window.show()
+    sys.exit(app.exec_())
