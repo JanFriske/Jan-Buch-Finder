@@ -1,7 +1,7 @@
 ```markdown
 # 📚 Jan-Buch-Finder
 
-**Jan-Buch-Finder** ist eine Desktop-Anwendung, mit der du Bücher von
+__Jan-Buch-Finder__ ist eine Desktop-Anwendung, mit der du Bücher von
 **Jan Friske** durchsuchen und Informationen zu den verfügbaren Titeln
 anzeigen kannst. Die Anwendung zeigt eine Liste von Büchern, deren
 **Cover**, **Kurz- und Langbeschreibungen**, sowie **ISBN** und einen
