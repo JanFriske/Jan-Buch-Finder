@@ -9,7 +9,7 @@ Shop-Link-Button, um die Bücher zu erwerben.
 
 ---
 
-## 🚀 Features
+## 🚀 Features (Features für Version 1.4 im Bereich Release)
 
 - Darstellung der Bücher mit Bild, Beschreibung, ISBN und Shop-Link
 - Navigation über Tabs zwischen verschiedenen Titeln
