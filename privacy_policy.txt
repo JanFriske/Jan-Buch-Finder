@@ -1,0 +1,38 @@
+Privacy Policy for Jan-Buch-Finder (Version 1.4)
+
+Last updated: April 14, 2025
+
+The Jan-Buch-Finder application, developed by Jan Friske, is a desktop-based software intended to help users explore books written by the author. This app is distributed free of charge and does not collect or store any personal data from users.
+
+1. No Data Collection
+---------------------
+This application does not collect, store, or transmit any personal or non-personal information. It runs entirely offline and does not connect to any servers or third-party services for analytics, tracking, or user profiling.
+
+2. External Links
+-----------------
+The app may provide links to external websites such as online bookstores, GitHub, or publisher websites. These links are purely informational. Once a user leaves the application by clicking a link, the privacy policies of the respective websites apply.
+
+3. Audio Playback
+-----------------
+The application includes background music (MP3 file) which plays locally. No data is collected or transmitted in relation to the audio playback.
+
+4. Open Source
+--------------
+The source code is publicly available under an open-source license on GitHub:
+https://github.com/JanFriske/Jan-Buch-Finder
+
+Users are encouraged to review the code for transparency and trust.
+
+5. Contact
+----------
+If you have any questions or concerns regarding this privacy policy, you can contact the developer via GitHub or the contact options provided in the Microsoft Store listing.
+
+6. Changes to This Policy
+--------------------------
+This privacy policy may be updated occasionally. Any changes will be reflected in this file and within the GitHub repository.
+
+Thank you for using Jan-Buch-Finder!
+
+--  
+Jan Friske  
+Developer and Author  

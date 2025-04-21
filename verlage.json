@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Neopubli GmbH",
+        "url": "https://www.epubli.com",
+        "adresse": "Köpenicker Straße 154a, 10997 Berlin"
+    },
+    {
+        "name": "Amadeus Verlag GmbH & Co. KG",
+        "url": "https://amadeus-verlag.de/",
+        "adresse": "Birkenweg 4, 74579 Fichtenau"
+    },
+    {
+        "name": "Sternentor Verlag",
+        "url": "https://sternentorverlag.de/",
+        "adresse": "Westerbuchberg 79, 83236 Übersee am Chiemsee"
+    },
+    {
+        "name": "Kopp Verlag e.K.",
+        "url": "https://www.kopp-verlag.de/",
+        "adresse": "Pfeiferstraße 52, 72108 Rottenburg"
+    },
+    {
+        "name": "Verlag Anton A. Schmid",
+        "url": "https://www.verlag-anton-schmid.de/",
+        "adresse": "Postfach 22, 87467 Durach"
+    },
+    {
+        "name": "Jupiter-Verlag",
+        "url": "https://www.jupiter-verlag.ch",
+        "adresse": "Emmersbergstrasse 1, 8200 Schaffhausen"
+    }
+]

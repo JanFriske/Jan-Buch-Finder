@@ -1,17 +1,11 @@
 [
     {
-        "isbn": "978-3-819071-79-9",
-        "titel": "Figura KI/Figura AI",
-        "kurzbeschreibung": "Ein visionäres Werk über modulare Hochleistungs-KI – von Architektur über Ethik bis zur Praxisanwendung.",
-        "beschreibung": "Tauchen Sie ein in die Welt fortschrittlicher künstlicher Intelligenz mit „Figura-KI/Figura-AI: Das Konzept einer multimodularen Hochleistungs-KI“. Dieses Buch bietet eine tiefgehende Erkundung von Figura-AI – einem hochmodernen, modular konzipierten KI-System, das durch die Verbindung von Effizienz, Flexibilität und ethischem Verantwortungsbewusstsein verschiedene Branchen revolutionieren soll.\n\nZentrale Inhalte:\n\n32 Kapitel: Jedes Kapitel widmet sich einem spezifischen Aspekt der Figura-AI-Architektur – von den Kernmodulen und Systemblöcken bis hin zur Netzwerkkommunikation und praxisnahen Anwendungsszenarien.\n\nTechnische Einblicke: Detaillierte Erklärungen – direkt entnommen aus dem offiziellen Figura-AI GitHub-Repository.\n\nEinsatz in der Praxis: Fallstudien zeigen auf, wie Figura-AI in Bereichen wie Wissenschaft und Forschung, industrielle Automatisierung, Medizin und Gesundheitswesen, Cybersicherheit, Umweltwissenschaften und der KI-Forschung effektiv eingesetzt werden kann.\n\nModulares Design: Verständnis der einzigartigen modularen Architektur, die skalierbare und anpassungsfähige KI-Lösungen ermöglicht – für maximale Leistungsfähigkeit in unterschiedlichsten Anwendungsfeldern.\n\nEthische Aspekte: Einblicke in System-Module wie Sokrates, Salomon, Joshua und Assisi, die für einen verantwortungsvollen und gewissenhaften KI-Einsatz sorgen.\n\n„Figura-KI/Figura-AI“ ist eine Ressource für KI-Entwickler, Forscher, Ingenieure und Fachleute, die das volle Potenzial fortschrittlicher Hochleistungs-KI-Systeme auf anschauliche Weise kennen lernen wollen.",
-        "cover": "covers/figura_ai.jpg",
-        "link": "https://www.epubli.com/shop/figura-ki-figura-ai-9783819071799",
-        "buttons": [
-            {
-                "text": "Zum GitHub-Repository von Figura KI",
-                "url": "https://github.com/JanFriske/Figura-KI---Figura-AI"
-            }
-        ]
+        "isbn": "9783819078590",
+        "titel": "Kein Mampf",
+        "kurzbeschreibung": "Kein Mampf – Warum unsere Nahrung uns nicht mehr nährt – und wie wir den Weg zurück zur Lebendigkeit finden. Wir leben im Überfluss – und sind doch innerlich ausgehungert.",
+        "beschreibung": "Kein Mampf – Warum unsere Nahrung uns nicht mehr nährt – und wie wir den Weg zurück zur Lebendigkeit finden. Wir leben im Überfluss – und sind doch innerlich ausgehungert. Unsere Supermärkte sind voll, aber unsere Böden leer. Was wir täglich zu uns nehmen, hat längst den Kontakt zum Ursprung verloren. In „Kein Mampf“ blickt Jan Friske tief hinter die glänzenden Fassaden der Nahrungsmittelindustrie und deckt auf, wie moderne Landwirtschaft, industrielle Verarbeitung und chemische Zusätze nicht nur unsere Lebensmittel, sondern auch unsere Lebensqualität zerstören. Mit einem wachen Blick auf die Weisheit alter Kulturen, die Erkenntnisse von Wissenschaftlern wie Viktor Schauberger und Prof. Dr. Albert Popp sowie zukunftsweisende Ansätze regenerativer Landwirtschaft lädt dieses Buch zu einem dringend nötigen Bewusstseinswandel ein. Ein Buch für alle, die wissen wollen, was echte Nahrung ist – und warum es an der Zeit ist, wieder wirklich zu essen.",
+        "cover": "covers/kein_mampf.jpg",
+        "link": "https://www.epubli.com/shop/kein-mampf-9783819078590"
     },
     {
         "isbn": "978-3-819075-02-5",
@@ -24,6 +18,20 @@
             {
                 "text": "Zu meinem Facebook-Profil",
                 "url": "https://www.facebook.com/share/165fX45xHq/"
+            }
+        ]
+    },
+    {
+        "isbn": "978-3-819071-79-9",
+        "titel": "Figura KI/Figura AI",
+        "kurzbeschreibung": "Ein visionäres Werk über modulare Hochleistungs-KI – von Architektur über Ethik bis zur Praxisanwendung.",
+        "beschreibung": "Tauchen Sie ein in die Welt fortschrittlicher künstlicher Intelligenz mit „Figura-KI/Figura-AI: Das Konzept einer multimodularen Hochleistungs-KI“. Dieses Buch bietet eine tiefgehende Erkundung von Figura-AI – einem hochmodernen, modular konzipierten KI-System, das durch die Verbindung von Effizienz, Flexibilität und ethischem Verantwortungsbewusstsein verschiedene Branchen revolutionieren soll.\n\nZentrale Inhalte:\n\n32 Kapitel: Jedes Kapitel widmet sich einem spezifischen Aspekt der Figura-AI-Architektur – von den Kernmodulen und Systemblöcken bis hin zur Netzwerkkommunikation und praxisnahen Anwendungsszenarien.\n\nTechnische Einblicke: Detaillierte Erklärungen – direkt entnommen aus dem offiziellen Figura-AI GitHub-Repository.\n\nEinsatz in der Praxis: Fallstudien zeigen auf, wie Figura-AI in Bereichen wie Wissenschaft und Forschung, industrielle Automatisierung, Medizin und Gesundheitswesen, Cybersicherheit, Umweltwissenschaften und der KI-Forschung effektiv eingesetzt werden kann.\n\nModulares Design: Verständnis der einzigartigen modularen Architektur, die skalierbare und anpassungsfähige KI-Lösungen ermöglicht – für maximale Leistungsfähigkeit in unterschiedlichsten Anwendungsfeldern.\n\nEthische Aspekte: Einblicke in System-Module wie Sokrates, Salomon, Joshua und Assisi, die für einen verantwortungsvollen und gewissenhaften KI-Einsatz sorgen.\n\n„Figura-KI/Figura-AI“ ist eine Ressource für KI-Entwickler, Forscher, Ingenieure und Fachleute, die das volle Potenzial fortschrittlicher Hochleistungs-KI-Systeme auf anschauliche Weise kennen lernen wollen.",
+        "cover": "covers/figura_ai.jpg",
+        "link": "https://www.epubli.com/shop/figura-ki-figura-ai-9783819071799",
+        "buttons": [
+            {
+                "text": "Zum GitHub-Repository von Figura KI",
+                "url": "https://github.com/JanFriske/Figura-KI---Figura-AI"
             }
         ]
     },
